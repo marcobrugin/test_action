@@ -1,0 +1,6 @@
+name: Test back CI 
+
+on:
+  push:
+    branches:
+    - master
