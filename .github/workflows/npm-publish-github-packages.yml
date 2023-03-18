@@ -3,11 +3,12 @@ name: Test back CI
 on:
   push:
     branches:
-    - main
+      -master
   jobs:
-    runs-on: ubuntu-latest
-  steps:
-    uses: actions/checkout@v3
-    -run: npm install
-    -run: npx truffle test
+    build:
+      runs-on: ubuntu-latest
+    steps:
+      uses: actions/checkout@v3
+      - run: npm install
+      - run: npx truffle test
     
