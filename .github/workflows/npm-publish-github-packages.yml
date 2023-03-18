@@ -1,12 +1,12 @@
 name: Test back CI 
-
+run-name: ${{ github.actor }} is learning GitHub Actions
 on:
   push:
     branches:
       -master
-  jobs:
-    build:
-      runs-on: ubuntu-latest
+jobs:
+  build:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
