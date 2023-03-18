@@ -16,4 +16,4 @@ jobs:
     - name: Build Debug version
       run: |
           chmod +x pipelines.sh
-          ./pipelines.sh "build"
+          ./pipelines.sh "build" 
